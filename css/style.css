@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    padding-top: 0.3rem;
+    text-align: center;
+} 
+
+.logo {
+    width: 20% !important;
+    
+}
+
+.fs-4 {
+    padding-left: 0.4rem;
+}
+
