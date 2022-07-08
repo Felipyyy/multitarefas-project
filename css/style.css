@@ -1,33 +1,57 @@
 * {
-    margin: 0;
     font-family: 'Fredoka', sans-serif;
 }
+
+/* index */
 
 body {
     background-image: url(../images/background.png);
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
 }
 
 .title {
-    padding-top: 0.3rem;
     text-align: center;
-} 
-
-.logo {
-    width: 20% !important;
-    
 }
 
-.fs-4 {
-    padding-left: 0.4rem;
+.animation {
+    width: 20%;
 }
 
+/* calculadora */
+
+#res {
+    height: 60px;
+    background-color: rgb(145, 174, 243);
+    padding-right: 0.5rem;
+    font-size: 40px;
+    text-align: right;
+    color: white;
+}
+
+.menu-calculadora {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(103, 112, 243);
+}
+
+.cal-btn {
+    width: 70px;
+    height: 30px;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+
+.verificar-btn {
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: rgb(152, 88, 212);
+}
