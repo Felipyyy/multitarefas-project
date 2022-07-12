@@ -84,15 +84,15 @@
 
         <div>
             <button class="cal-btn" onclick="clean()"> C </button>
-            <button class="cal-btn"> < </button>
-            <button class="cal-btn" onclick="add('^')"> ^ </button>
+            <button class="cal-btn" onclick="cleanLastDigit()"> < </button>
+            <button class="cal-btn" onclick="add('**')"> ^ </button>
             <button class="cal-btn" onclick="add('/')"> / </button>
         </div>
 
         <div>
-            <button class="cal-btn" onclick="add('1')"> 1 </button>
-            <button class="cal-btn" onclick="add('2')"> 2 </button>
-            <button class="cal-btn" onclick="add('3')"> 3 </button>
+            <button class="cal-btn" onclick="add('7')"> 7 </button>
+            <button class="cal-btn" onclick="add('8')"> 8 </button>
+            <button class="cal-btn" onclick="add('9')"> 9 </button>
             <button class="cal-btn" onclick="add('*')"> * </button>
         </div>
     
@@ -104,16 +104,16 @@
         </div>
     
         <div>
-            <button class="cal-btn" onclick="add('7')"> 7</button>
-            <button class="cal-btn" onclick="add('8')"> 8 </button>
-            <button class="cal-btn" onclick="add('9')"> 9 </button>
+            <button class="cal-btn" onclick="add('1')"> 1 </button>
+            <button class="cal-btn" onclick="add('2')"> 2 </button>
+            <button class="cal-btn" onclick="add('3')"> 3 </button>
             <button class="cal-btn" onclick="add('+')"> + </button>
         </div>
 
         <div>
             <button class="cal-btn" onclick="add('.')"> . </button>
             <button class="cal-btn" onclick="add('0')"> 0 </button>
-            <button class="verificar-btn" style="width: 144px;" onclick="verificar()"> = </button>
+            <button class="verificar-btn" style="width: 104px;" onclick="calcular()"> = </button>
         </div>
     </div>
 

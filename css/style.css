@@ -28,6 +28,7 @@ body {
     font-size: 40px;
     text-align: right;
     color: white;
+    overflow: hidden;
 }
 
 .menu-calculadora {
@@ -38,10 +39,11 @@ body {
     padding: 25px;
     text-align: center;
     background-color: rgb(103, 112, 243);
+    box-shadow: black 0.4rem 0.4rem 0.4rem;
 }
 
 .cal-btn {
-    width: 70px;
+    width: 50px;
     height: 30px;
     font-weight: 400;
     border-radius: 5px;
