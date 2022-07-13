@@ -5,7 +5,7 @@ let interval
 
 function start() {
     document.querySelector('.start-btn').innerText = 'Iniciar'
-    interval = setInterval(watch, 10)
+    interval = setInterval(watch, 1000)
 }
 
 function twoDigits(digit) {
