@@ -19,15 +19,15 @@
 
 <body>
     <nav>
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars"></i></button>
+        <button class="btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars"></i></button>
 
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
             aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
             <div class="offcanvas-body">
                 <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
                     <a href="./index.html"
@@ -69,61 +69,33 @@
                 </div>
             </div>
     </nav>
+    
 
-    <div class="title">
-        <h1>
-            Calculadora
-        </h1>
+    <h1 class="title"> Cronômetro </h1>
+    <div class="menu-stopwatch">
+
+        <div class="painel-stopwatch">
+            <h1 id="resultado">00:00:00</h1>
+        </div>
+
+        <div class="stopwatch-btn">
+            <button class="start-btn" onclick="start()"> Iniciar </button>
+            <button class="pause-btn" onclick="pause()"> Pausar </button>
+            <button class="stop-btn" onclick="stop()"> Parar </button>
+        </div>
     </div>
 
-    <div class="menu-calculadora">
 
-        <p id="res">
-            
-        </p>
-
-        <div>
-            <button class="cal-btn" onclick="clean()"> C </button>
-            <button class="cal-btn" onclick="cleanLastDigit()"> < </button>
-            <button class="cal-btn" onclick="add('**')"> ^ </button>
-            <button class="cal-btn" onclick="add('/')"> / </button>
-        </div>
-
-        <div>
-            <button class="cal-btn" onclick="add('7')"> 7 </button>
-            <button class="cal-btn" onclick="add('8')"> 8 </button>
-            <button class="cal-btn" onclick="add('9')"> 9 </button>
-            <button class="cal-btn" onclick="add('*')"> * </button>
-        </div>
-    
-        <div>
-            <button class="cal-btn" onclick="add('4')"> 4 </button>
-            <button class="cal-btn" onclick="add('5')"> 5 </button>
-            <button class="cal-btn" onclick="add('6')"> 6 </button>
-            <button class="cal-btn" onclick="add('-')"> - </button>
-        </div>
-    
-        <div>
-            <button class="cal-btn" onclick="add('1')"> 1 </button>
-            <button class="cal-btn" onclick="add('2')"> 2 </button>
-            <button class="cal-btn" onclick="add('3')"> 3 </button>
-            <button class="cal-btn" onclick="add('+')"> + </button>
-        </div>
-
-        <div>
-            <button class="cal-btn" onclick="add('.')"> . </button>
-            <button class="cal-btn" onclick="add('0')"> 0 </button>
-            <button class="verificar-btn" style="width: 104px;" onclick="calcular()"> = </button>
-        </div>
-    </div>
 
 </body>
-<script src="./js/calculator.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+<script src="./js/stopwatch.js"></script>
 </html>
