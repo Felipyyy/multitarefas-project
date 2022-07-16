@@ -72,17 +72,21 @@
     
 
     <h1 class="title"> Cronômetro </h1>
+
     <div class="menu-stopwatch">
 
-        <div class="painel-stopwatch">
-            <h1 id="resultado">00:00:00</h1>
+        <div class="background-stopwatch">
+            <div class="painel-stopwatch">
+                <h1 id="resultado">00:00:00</h1>
+            </div>
+    
+            <div clsass="stopwatch-btn">
+                <button class="start-btn" onclick="start()"> Iniciar </button>
+                <button class="pause-btn" onclick="pause()"> Pausar </button>
+                <button class="stop-btn" onclick="stop()"> Parar </button>
+            </div>
         </div>
-
-        <div class="stopwatch-btn">
-            <button class="start-btn" onclick="start()"> Iniciar </button>
-            <button class="pause-btn" onclick="pause()"> Pausar </button>
-            <button class="stop-btn" onclick="stop()"> Parar </button>
-        </div>
+        
     </div>
 
 

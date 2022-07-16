@@ -1,6 +1,6 @@
-let ss = 00
-let mm = 00
-let hh = 00
+let ss = 0
+let mm = 0
+let hh = 0
 let interval
 
 function start() {
@@ -27,11 +27,10 @@ function pause() {
 
 function stop() {
     clearInterval(interval)
-    ss = 00
-    mm = 00
-    hh = 00
+    ss = 0
+    mm = 0
+    hh = 0
     document.getElementById('resultado').innerHTML = twoDigits(hh) + ':' + twoDigits(mm) + ':' + twoDigits(ss)
-    document.querySelector('.start-btn').innerText = 'Iniciar'
 }
 
 function watch() {
